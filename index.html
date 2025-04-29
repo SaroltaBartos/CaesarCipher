@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="m-4">Caesar Cipher</h1>
+    <div class="m-5">
+        <div class="grid md:grid-cols-12 p-2 bg-cyan-500 rounded-xl">
+        <section id="input-box" class="grid md:col-span-4 md:col-start-2 border border-indigo-600 rounded-xl">
+            <p class="p-2">Input box</p>
+        </section>
+        <section id="control-panel" class="grid md:col-span-2 md:col-start-6 p-2">
+            <select id="keyDropdown" class="m-1">
+                <option value="1">Shift by 1</option>
+                <option value="2">Shift by 2</option>
+                <option value="3">Shift by 3</option>
+                <option value="4">Shift by 4</option>
+                <option value="5">Shift by 5</option>
+                <option value="6">Shift by 6</option>
+                <option value="7">Shift by 7</option>
+                <option value="8">Shift by 8</option>
+                <option value="9">Shift by 9</option>
+                <option value="10">Shift by 10</option>
+                <option value="11">Shift by 11</option>
+                <option value="12">Shift by 12</option>
+                <option value="13">Shift by 13</option>
+                <option value="14">Shift by 14</option>
+                <option value="15">Shift by 15</option>
+                <option value="16">Shift by 16</option>
+                <option value="17">Shift by 17</option>
+                <option value="18">Shift by 18</option>
+                <option value="19">Shift by 19</option>
+                <option value="20">Shift by 20</option>
+                <option value="21">Shift by 21</option>
+                <option value="22">Shift by 22</option>
+                <option value="23">Shift by 23</option>
+                <option value="24">Shift by 24</option>
+                <option value="25">Shift by 25</option>
+                <option value="26">Shift by 26</option>
+              </select>
+              <select id="directionDropdown" class="m-1">
+                <option value="right">Shift Right</option>
+                <option value="left">Shift Left</option>
+              </select>
+              <button id="codeDecode" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-1">
+                Encrypt
+            </button>
+        </section>
+        <section id="output-box" class="grid md:col-span-4 md:col-start-8 border border-indigo-600 rounded-xl">
+            <p class="p-2">Output box</p>
+        </section>
+        </div>
+    </div>
+</body>
