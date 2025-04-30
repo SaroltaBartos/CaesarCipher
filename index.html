@@ -12,7 +12,7 @@
     <div class="m-5">
         <div class="grid md:grid-cols-12 p-2 bg-cyan-500 rounded-xl">
         <section id="input-box" class="grid md:col-span-4 md:col-start-2 border border-indigo-600 rounded-xl">
-            <p class="p-2">Input box</p>
+            <textarea id="inputText" rows="6" class="p-2 rounded w-full" placeholder="Enter your message here..."></textarea>
         </section>
         <section id="control-panel" class="grid md:col-span-2 md:col-start-6 p-2">
             <select id="keyDropdown" class="m-1">
@@ -52,8 +52,9 @@
             </button>
         </section>
         <section id="output-box" class="grid md:col-span-4 md:col-start-8 border border-indigo-600 rounded-xl">
-            <p class="p-2">Output box</p>
+            <textarea id="outputText" rows="6" class="p-2 rounded w-full" readonly></textarea>
         </section>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
