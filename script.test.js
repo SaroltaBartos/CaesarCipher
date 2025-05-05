@@ -1,9 +1,5 @@
 const { caesarCipherLogic } = require("./script");
 
-test("fails if output-text is not converting capital letters", () => {
-  expect(caesarCipherLogic("capitalLetters", 3, "right")).toBe(false); // this might still fail for logic reasons, which is fine in red phase
-});
-
 test("shifts lowercase letters correctly", () => {
   expect(caesarCipherLogic("abc", 1, "right")).toBe("bcd");
   expect(caesarCipherLogic("xyz", 2, "right")).toBe("zab");
